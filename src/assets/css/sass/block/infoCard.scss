@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: $header-text-color;
+    color: $sidebar-text-color;
     letter-spacing: 2px;
 
     .infoCard-title {
@@ -38,7 +38,7 @@
 
     $skill-height: 20px;
     .infoCard-skillLoader {
-        border: 2px solid $header-text-color;
+        border: 2px solid $sidebar-text-color;
         height: $skill-height;
         width: 100%;
         margin-bottom: 2em;
@@ -47,14 +47,14 @@
         .infoCard-skillLoaderContent {
             position: absolute;
             height: $skill-height;
-            background-color: $header-text-color;
+            background-color: $sidebar-text-color;
         }
     }
 
     .infoCard-separator {
         border: none;
         height: 2px;
-        background-color: $header-text-color;
+        background-color: $sidebar-text-color;
         margin: 1.5em 0;
         width: 75%;
     }

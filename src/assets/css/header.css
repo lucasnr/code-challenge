@@ -5,7 +5,6 @@
   font-family: "MontserratBold";
   src: url(../font/Montserrat-Bold.ttf); }
 .header {
-  background-color: #312e2d;
   color: #FFF; }
   .header .mainInfo {
     display: flex;

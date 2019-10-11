@@ -1,0 +1,15 @@
+.meritCard {
+  font-family: "MontserratRegular";
+  font-weight: bold; }
+  .meritCard .meritCard-title {
+    text-transform: uppercase;
+    font-family: "MontserratBold";
+    font-size: 1.5em;
+    margin: .5em 0 1em 0; }
+  .meritCard .meritCard-date {
+    display: block;
+    margin-bottom: 1em; }
+  .meritCard .meritCard-text {
+    line-height: 2; }
+
+/*# sourceMappingURL=meritCard.css.map */

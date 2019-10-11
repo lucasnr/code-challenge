@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,QAAS;EACL,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,KAAK;EAChB,gBAAgB,ECLM,OAAO",
+"mappings": "AAEA,QAAS;EACL,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,KAAK;EAChB,gBAAgB,ECLO,OAAO",
 "sources": ["sass/sidebar.scss","sass/_colors.scss"],
 "names": [],
 "file": "sidebar.css"
