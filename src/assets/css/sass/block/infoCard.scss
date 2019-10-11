@@ -1,0 +1,62 @@
+@import '../colors';
+
+.infoCard {
+    width: 70%;
+    margin: auto;
+    padding: 1em 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $header-text-color;
+    letter-spacing: 2px;
+
+    .infoCard-title {
+        font-family: "MontserratBold";
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .infoCard-itemContainer {
+        display: block;
+        margin: 1em 0;
+    }
+
+    .infoCard-item {
+        display: block;
+        line-height: 2;
+        font-family: "MontserratRegular";
+    }
+
+    .infoCard-skill {
+        display: block;
+        font-family: "MontserratRegular";
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+    }
+
+    $skill-height: 20px;
+    .infoCard-skillLoader {
+        border: 2px solid $header-text-color;
+        height: $skill-height;
+        width: 100%;
+        margin-bottom: 2em;
+        position: relative;    
+    
+        .infoCard-skillLoaderContent {
+            position: absolute;
+            height: $skill-height;
+            background-color: $header-text-color;
+        }
+    }
+
+    .infoCard-separator {
+        border: none;
+        height: 2px;
+        background-color: $header-text-color;
+        margin: 1.5em 0;
+        width: 75%;
+    }
+
+}

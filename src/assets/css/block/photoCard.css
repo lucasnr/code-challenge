@@ -1,0 +1,22 @@
+.photoCard {
+  border: 2px solid #FFF;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 6em;
+  transform: rotate(45deg);
+  padding: .25em;
+  display: flex; }
+  .photoCard .photoCard-content {
+    background-color: #FFF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+  .photoCard .photoCard-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transform: rotate(-45deg); }
+
+/*# sourceMappingURL=photoCard.css.map */
