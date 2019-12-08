@@ -39,19 +39,19 @@ export function Skills({ skills }) {
         return null;
 
     return (
-        <InfoCard title="Skills">
-            {skills.map(skill =>
-                (
-                    <>
-                        <span className="infoCard-skill">{skill.name}</span>
-                        <div className="infoCard-skillLoader">
-                            <div className="infoCard-skillLoaderContent"
-                                style={{width: skill.value}}></div>
-                        </div>
-                    </>
-                )
-            )}
-        </InfoCard>
+			<InfoCard title="Skills">
+					{skills.map(skill =>
+							(
+								<>
+										<span className="infoCard-skill">{skill.name}</span>
+										<div className="infoCard-skillLoader">
+												<div className="infoCard-skillLoaderContent"
+														style={{width: skill.value}}></div>
+										</div>
+								</>
+							)
+					)}
+			</InfoCard>
     );
 }
 

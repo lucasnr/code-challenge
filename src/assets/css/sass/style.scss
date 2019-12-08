@@ -1,8 +1,19 @@
+@import './colors';
+
 $black: #070606;
 
 .main {
     display: flex;
     flex-flow: row wrap;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    background-color: $sidebar-background-color;
+
+    @media screen and (min-width: 976px) {
+        max-width: 450px;
+    }
 }
 
 .mainContent {

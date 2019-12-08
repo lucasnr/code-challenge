@@ -1,6 +1,7 @@
 .meritCard {
   font-family: "MontserratRegular";
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 4em; }
   .meritCard .meritCard-title {
     text-transform: uppercase;
     font-family: "MontserratBold";

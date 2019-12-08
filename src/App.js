@@ -2,11 +2,10 @@ import React from 'react';
 
 import Header from './component/Header';
 import { Profile, Contact, Skills } from './component/Sidebar';
-import { Experience } from './component/Main';
+import { Content } from './component/Main';
 
 import './assets/css/reset.css';
 import './assets/css/style.css';
-import './assets/css/sidebar.css';
 
 class App extends React.Component {
 
@@ -21,25 +20,33 @@ class App extends React.Component {
 	componentDidMount() {
 		fetch("http://www.mocky.io/v2/5a5e38f3330000b0261923a5")
 			.then(response => response.json())
-			.then(user => {
-				const { profile } = user;
+			.then(({ profile }) => {
 				this.setState({ profile });
 			})
 	}
 
 	render() {
+		const { profile } = this.state;
 		return (
 			<main className="main">
 				<aside className="sidebar">
-					<Header {...this.state.profile} />
-					<Profile {...this.state.profile} />
-					<Contact {...this.state.profile} />
-					<Skills {...this.state.profile} />
+					<Header {...profile} />
+					<Profile {...profile} />
+					<Contact {...profile} />
+					<Skills {...profile} />
 				</aside>
 				<article className="mainContent">
 					<h2 className="mainContent-title">Work Experience</h2>
 
-					<Experience />
+					{profile.experience && profile.experience.map(experience => (
+						<Content content={experience} />
+					))}
+
+					<h2 className="mainContent-title">Education</h2>
+					{profile.education && profile.education.map(education => (
+						<Content content={education} />
+					))}
+
 				</article>
 			</main>
 		);

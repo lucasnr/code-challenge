@@ -2,6 +2,13 @@
   display: flex;
   flex-flow: row wrap; }
 
+.sidebar {
+  box-sizing: border-box;
+  background-color: #312e2d; }
+  @media screen and (min-width: 976px) {
+    .sidebar {
+      max-width: 450px; } }
+
 .mainContent {
   flex: 1;
   padding: 4em; }
