@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "image": "https://avatars2.githubusercontent.com/u/30985811?s=400&u=3b4bdca62bdbab8aa66d5fffb9a5fdcf2319e38b&v=4",
+    "name": "Lucas Nascimento",
+    "profession": "Web Developer",
+    "description": "19-year old web developer from Rio Grande do Norte with 4+ years of work experience in various fields",
+    "contact": {
+      "tel": "none",
+      "cel": "+55 084 9-8852-3780",
+      "address": "379 Rua Trinta e Um de Março. Rio Grande do Norte",
+      "website": "lucasnr.github.io",
+      "mail": "lucasnascimentoribeiro13@gmail.com"
+    },
+    "skills": [
+      {
+        "name": "Front End",
+        "value": "95%"
+      },
+      {
+        "name": "Back End",
+        "value": "95%"
+      },
+      {
+        "name": "Databases",
+        "value": "80%"
+      },
+      {
+        "name": "Design",
+        "value": "55%"
+      }
+    ],
+    "experience": [
+      {
+        "name": "IT Intern @ Secretaria Municial de Educação de São Gonçalo do Amarante",
+        "date": "March 2017 - September 2017",
+        "description": "Worked as a inter to solve hardware issues by demand as well as to improve the company's current softwares"
+      }
+    ],
+    "education": [
+      {
+        "name": "Informatics Technician @ Instituto Federal de Educação Ciência e Tecnologia",
+        "date": "April 2016 - December 2019",
+        "description": "Studied Web development techniques and pratices on Java (Spring, JSF) and on JavaScript (Node, ReactJS)"
+      }
+    ]
+  }
+}
