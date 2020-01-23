@@ -18,7 +18,7 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("http://www.mocky.io/v2/5a5e38f3330000b0261923a5")
+		fetch("https://www.mocky.io/v2/5a5e38f3330000b0261923a5")
 			.then(response => response.json())
 			.then(({ profile }) => {
 				this.setState({ profile });
