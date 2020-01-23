@@ -1,0 +1,9 @@
+@import "src/assets/scss/_colors.scss";
+
+.sidebar {
+  background-color: $sidebarBackgroundColor;
+
+  @media screen and (min-width: 976px) {
+    max-width: 450px;
+  }
+}

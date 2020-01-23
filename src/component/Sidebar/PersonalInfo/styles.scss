@@ -1,0 +1,66 @@
+@import "src/assets/scss/_colors.scss";
+
+.personal-info {
+  width: 70%;
+  margin: auto;
+  padding: 1em 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $sidebarTextColor;
+  letter-spacing: 2px;
+
+  .personal-info__title {
+    font-family: "MontserratBold";
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  .personal-info__item-container {
+    display: block;
+    margin: 1em 0;
+  }
+
+  .personal-info__item {
+    display: block;
+    line-height: 2;
+    font-family: "MontserratRegular";
+
+    &.personal-info__item--email {
+      word-break: break-all;
+    }
+  }
+
+  .personal-info__skill {
+    display: block;
+    font-family: "MontserratRegular";
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+  }
+
+  $skill-height: 20px;
+  $border-width: 2px;
+  .personal-info__skill-loader {
+    border: $border-width solid $sidebarTextColor;
+    height: $skill-height;
+    width: 100%;
+    margin-bottom: 2em;
+    position: relative;
+
+    .personal-info__skill-loader__content {
+      position: absolute;
+      height: calc(#{$skill-height} - #{$border-width});
+      background-color: $sidebarTextColor;
+    }
+  }
+
+  .personal-info__separator {
+    border: none;
+    height: 2px;
+    background-color: $sidebarTextColor;
+    margin: 1.5em 0;
+    width: 75%;
+  }
+}

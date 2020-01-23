@@ -1,14 +1,28 @@
 import React from 'react';
 
-import "../../assets/css/block/meritCard.css";
+import Experience from './Experience';
 
-export function Content({ content }) {
-    const { name, date, description } = content;
-    return (
-        <div className="meritCard">
-            <h3 className="meritCard-title">{ name }</h3>
-            <time className="meritCard-date">{ date }</time>
-            <p className="meritCard-text">{ description }</p>
-        </div>
-    );
+import './styles.scss';
+
+export default function Main({ profile }) {
+  const { experience, education } = profile;
+
+  return (
+    <main className="main">
+      <div className="experience">
+        <h2 className="experience__title">Work Experience</h2>
+
+        {experience.map(experience => (
+          <Experience experience={experience} />
+        ))}
+      </div>
+      
+      <div className="experience">
+        <h2 className="experience__title">Education</h2>
+        {education.map(education => (
+          <Experience experience={education} />
+        ))}
+      </div>
+    </main>
+  );
 }

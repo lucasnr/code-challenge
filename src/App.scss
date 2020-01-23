@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url(./assets/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: url(./assets/font/Montserrat-Bold.ttf);
+}
+

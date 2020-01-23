@@ -1,0 +1,73 @@
+@import "src/assets/scss/_colors.scss";
+
+.header {
+  color: $sidebarTextColor;
+
+  .user {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding-top: 6em;
+
+    .user__name {
+      font-family: "MontserratBold";
+      font-size: 1.5em;
+      letter-spacing: 5px;
+      line-height: 1.25;
+      margin-bottom: 0.25em;
+      padding: 0 15px;
+      text-transform: uppercase;
+
+      @media screen and(min-width: 562px) {
+        font-size: 3em;
+      }
+    }
+
+    .user__profession {
+      font-family: "MontserratRegular";
+      font-size: 1em;
+      letter-spacing: 3px;
+      padding: 0 15px;
+      text-transform: uppercase;
+    }
+
+    .user__separator {
+      background-color: $sidebarTextColor;
+      border: none;
+      height: 2px;
+      margin: 4em 0;
+      margin-left: 1em;
+      width: calc(100% - 1em);
+    }
+
+    $backgroundColor: $sidebarTextColor;
+    $degress: 45deg;
+    $size: 150px;
+    .user__avatar {
+      border: 2px solid $backgroundColor;
+      display: flex;
+      height: $size;
+      margin-bottom: 6em;
+      padding: 0.25em;
+      transform: rotate($degress);
+      width: $size;
+
+      .user__avatar__content {
+        align-items: center;
+        background-color: $backgroundColor;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .user__avatar__image {
+        object-fit: cover;
+        height: $size;
+        transform: rotate($degress * -1);
+        width: $size;
+      }
+    }
+  }
+}

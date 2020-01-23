@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,UAAW;EACP,WAAW,EAAE,mBAAmB;EAChC,WAAW,EAAE,IAAI;EACjB,aAAa,EAAE,GAAG;EAElB,2BAAiB;IACb,cAAc,EAAE,SAAS;IACzB,WAAW,EAAE,gBAAgB;IAC7B,SAAS,EAAE,KAAK;IAChB,MAAM,EAAE,YAAY;EAGxB,0BAAgB;IACZ,OAAO,EAAE,KAAK;IACd,aAAa,EAAE,GAAG;EAGtB,0BAAgB;IACZ,WAAW,EAAE,CAAC",
-"sources": ["../sass/block/meritCard.scss"],
-"names": [],
-"file": "meritCard.css"
-}

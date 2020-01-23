@@ -1,0 +1,8 @@
+.main {
+  flex: 1;
+  padding: 2em;
+
+  @media screen and (min-width: 562px) {
+    padding: 4em;
+  }
+}
